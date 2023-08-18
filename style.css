@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* body background and text color of portfolio */
+body{
+    background: #000;
+    color: #f1f1f1;
+}
+/* the header id is for the overall of the background image that will have parallax effect
+as well as the width of the nav bar */
+#header{
+    width:100%;
+    height:100vh;
+    background-image: url(img/background-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* this class is holding the actual contents of the nav bar */
+.container{
+    padding:10px 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* this is the text on the right which says hire me, still in testing */
+.logo{
+    width:140px;
+}
+/* this is the content within the navbar i.e home, contact, etc. */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+/* this is the styling of the anchor tags in the nav bar*/
+nav ul li a{
+    color:#f1f1f1;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+/* nav:after and nav:hover are for when you move the mouse over the nav it will then underline the words with animation */
+nav ul li a::after{
+    content:'';
+    width:0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+/* this will be for the text that is on the main header image */
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+
+/* this next section is going to be for the about section */
+
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis:35%;
+}
+.about-col-1 img{
+    width:100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color:#fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width:50%;
+}
