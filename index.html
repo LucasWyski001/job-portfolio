@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e43fa2719e.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,13 +13,15 @@
         <div class="container">
             <nav>
                 <span class="logo">Hire Me</span>
-                <ul>
+                <ul id="sidenav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeNav()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openNav()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -31,7 +34,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="#" alt="some picture will go here">
+                    <img src="img/exampleAboutMe.jpg" alt="some picture will go here" style ="max-height: 600px; max-width: 400px;">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -44,7 +47,7 @@
                         <!-- on click open tabs will be able to open other sections within the about me that are hidden -->
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -55,34 +58,49 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>Web Development</span><br>Front End Web Developer</li>
-                            <li><span>Web Development</span><br>Front End Web Developer</li>
-                            <li><span>Web Development</span><br>Front End Web Developer</li>
+                            <li><span>experience</span><br>YOUR MOM</li>
+                            <li><span>experience</span><br>idk what im doing</li>
+                            <li><span>experience</span><br>i guess im a coder</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>Web Development</span><br>Front End Web Developer</li>
-                            <li><span>Web Development</span><br>Front End Web Developer</li>
-                            <li><span>Web Development</span><br>Front End Web Developer</li>
+                            <li><span>education</span><br>UT</li>
+                            <li><span>education</span><br>BING CHILLING</li>
+                            <li><span>education</span><br>DIM SUM</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- prop will add languages i know here after the about me,  then projects -->
+
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-
         function opentab(tabname){
             for(tablink of tablinks){
                 tablink.classList.remove("active-link");
             }
             for(tabcontent of tabcontents){
-                tabcontents.classList.remove("active-tab");
+                tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+    <!-- this JS is for the nav bar which yes it contradicts the other comment that will remove the need for JS but it will just make it easier is what i meant-->
+    <script>
+        var sidenav = document.getElementById("sidenav");
+
+        function openNav(){
+            sidenav.style.right = "0";
+        }
+        function closeNav(){
+            sidenav.style.right = "-200px";
         }
     </script>
 
