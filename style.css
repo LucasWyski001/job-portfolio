@@ -162,18 +162,23 @@ nav .fas{
 
 .language {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 12px;
     vertical-align: top;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 4px 8px rgba(255, 159, 231, 0.5);
+    box-shadow: 0px 4px 8px rgba(238, 84, 217, 0.5);
 }
 
 .language img {
     width: 48px;
     height: 48px;
+    border-radius: 15px;
     transition: transform 0.2s;
 }
 
 .language img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: 0px 0px 30px 0px  #fc2bac;
 }
 
 
@@ -230,8 +235,4 @@ nav .fas{
     .about-col-2{
         font-size: 14px;
     }
-    /* .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
-    } */
 }
