@@ -182,7 +182,59 @@ nav .fas{
 }
 
 
-
+/* this next section is going to be where my projects will come into play where i will display my projects */
+.my-projects{
+    padding: 80px 0;
+    text-align: center;
+}
+.my-projects h2{
+    font-size: 40px;
+    font-weight: 600;
+    color:#f1f1f1;
+    margin-bottom: 30px;
+}
+.project{
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+.project-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.8);
+    color:#f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding:20px;
+}
+.project-details h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.project-details p{
+    font-size: 16px;
+    text-align: center;
+}
+.project:hover img{
+    transform: scale(1.05);
+}
+.project:hover .project-details{
+    opacity: 1;
+}
 
 
 @media only screen and (max-width:600px){
