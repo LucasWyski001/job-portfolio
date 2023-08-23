@@ -235,7 +235,43 @@ nav .fas{
 .project:hover .project-details{
     opacity: 1;
 }
+/* this section is for a form where people hopefully potential employers can send me emails! */
+.formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black; /* Updated background color */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: white; /* Text color */
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="text"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+    background-color: #333; /* Input background color */
+    color: white; /* Input text color */
+}
+
+button[type="submit"] {
+    background-color: #b54769;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
 @media only screen and (max-width:600px){
     #header{
@@ -286,5 +322,8 @@ nav .fas{
     }
     .about-col-2{
         font-size: 14px;
+    }
+    .formContainer {
+        max-width: 100%;
     }
 }
