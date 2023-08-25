@@ -13,15 +13,13 @@
         <div class="container">
             <nav>
                     <div class="navbar-brand mr-auto theme-color hover transition hire-me">
-                    <span id="span">Resume</span>
-                    <i class="fa-solid fa-file fa-1.5x"></i>
-                  </div>
+                        <i class="fa-solid fa-terminal fa-2x"></i>
+                    </div>
                 <ul id="sidenav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#my-projects">Projects</a></li>
+                    <li><a href="#formContainer">Contact</a></li>
                     <i class="fas fa-times" onclick="closeNav()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openNav()"></i>
@@ -41,9 +39,10 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Some example paragraph will go here for the portfolio about myself
-                        Some example paragraph will go here for the portfolio about myself
-                        Some example paragraph will go here for the portfolio about myself
+                    <p>Hello! I am Lucas Wysoczanski, I am a web developer with a background in health service and data. I bring analytical thinking, dedication to work, and of course a little comedy.
+                        I am fully commited to making a positive impact and difference in the community I live in, wether it be at home or work.<br><br>
+                        Being motivated into improving daily and learning new skills, I love to help and join projects, as well as staying up to date with coding trends. With a background
+                        in health service, I excell in understanding the clients needs and a strive to create user friendly web solutions.
                     </p>
 
                     <div class="tab-titles">
@@ -59,16 +58,12 @@
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>experience</span><br>YOUR MOM</li>
-                            <li><span>experience</span><br>idk what im doing</li>
-                            <li><span>experience</span><br>i guess im a coder</li>
+                            <li><span>experience</span><br>coming soon</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>education</span><br>UT</li>
-                            <li><span>education</span><br>BING CHILLING</li>
-                            <li><span>education</span><br>DIM SUM</li>
+                            <li><span>education</span><br>UT<br>Full Stack Web Developer<br>certification</li>
                         </ul>
                     </div>
                 </div>
@@ -108,25 +103,29 @@
         </div>
     </section>
 
-    <section class="my-projects">
+    <section id="my-projects">
         <h2>My Projects</h2>
         <div class="project">
             <img src="img/project1.jpg" alt="Project 1" style="max-height: 800px; max-width: 800px;">
             <div class="project-details">
                 <h3>D&D story generator</h3>
-                <p>Project 1 description goes here.</p>
+                <p>D&D Story generator was created using JavaScript, HTML, CSS , and Bulma framework. This web application is mobile responsive, and generates random stories based on your choices.
+                    This web application was created for Dungeons and Dragons players who want to create a story for there next game, but, also makes a good story line if you just like creating stories.
+                </p>
             </div>
         </div>
         <div class="project">
             <img src="img/tech-blog.jpg" alt="Project 2" style="max-height: 800px; max-width: 800px;">
             <div class="project-details">
                 <h3>Tech Blog</h3>
-                <p>Project 2 description goes here.</p>
+                <p>Tech Blog is a site where users can create an account, comment on others' posts, and edit or delete their own posts and comments.
+                    Solves the need for a space to embrace your inner nerd and express yourself freely!
+                    This project was built to practice using technologies such as Node.js, Express, Handlebars, MySQL2 / Sequelize, etc..</p>
             </div>
         </div>
         <!-- Add more project items as needed -->
     </section>
-    <div class="formContainer">
+    <div id="formContainer">
         <form action="https://formsubmit.co/lucaswyski01@gmail.com" method="POST">
             <input type="hidden" name="_subject" value="POSSIBLE JOB LES GOOOOOOOO">
             <input type="text" name="name" placeholder="Enter Name"required>

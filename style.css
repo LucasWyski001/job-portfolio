@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* body background and text color of portfolio */
 body{
     background: #000;
@@ -183,11 +186,11 @@ nav .fas{
 
 
 /* this next section is going to be where my projects will come into play where i will display my projects */
-.my-projects{
+#my-projects{
     padding: 80px 0;
     text-align: center;
 }
-.my-projects h2{
+#my-projects h2{
     font-size: 40px;
     font-weight: 600;
     color:#f1f1f1;
@@ -236,7 +239,7 @@ nav .fas{
     opacity: 1;
 }
 /* this section is for a form where people hopefully potential employers can send me emails! */
-.formContainer {
+#formContainer {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
